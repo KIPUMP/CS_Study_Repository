@@ -20,29 +20,31 @@
 
 ## 📂 카테고리
 
-### 🗄 Database
+### 🗄 Database(계획중)
 - Index
 - Transaction
 - Lock
 - Normalization
 
-### 💻 Operating System
+### 💻 Operating System(계획중)
 - Process vs Thread
 - Synchronization
 - DeadLock
 - CPU Scheduling
 
-### 🌐 Network
+### 🌐 Network(계획중)
 - TCP vs UDP
 - HTTP / HTTPS
 - DNS
 
-### ☕ Java
+### ☕ Java(계획중)
+- [Class_Method_compile](Java//클래스_메소드_컴파일.md)
+- [Variable](Java//자바의%20변수.md)
 - JVM
 - GC
 - Collection
 
-### 📦 DataStructure
+### 📦 DataStructure(계획중)
 - Stack / Queue
 - Tree
 - Heap
