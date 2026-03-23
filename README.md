@@ -37,9 +37,10 @@
 - HTTP / HTTPS
 - DNS
 
-### ☕ Java(계획중)
-- [Class_Method_compile](Java//클래스_메소드_컴파일.md)
-- [Variable](Java//자바의%20변수.md)
+### ☕ Java(진행중)
+- [클래스_메소드_컴파일](Java//클래스_메소드_컴파일.md)
+- [변수](Java//자바의_변수.md)
+- [자료형](Java//연산자_자료형.md)
 - JVM
 - GC
 - Collection
