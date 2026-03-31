@@ -42,6 +42,7 @@
 - [변수](Java//자바의_변수.md)
 - [자료형](Java//연산자_자료형.md)
 - [자바형변환](Java//자바_형변환.md)
+- [자바_배열](Java//자바_배열.md)
 - JVM
 - GC
 - Collection
