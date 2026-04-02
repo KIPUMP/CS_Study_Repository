@@ -1,4 +1,4 @@
-## 2. DTO와 VO
+# DTO와 VO
 
 ### DTO (Data Transfer Object)
 
