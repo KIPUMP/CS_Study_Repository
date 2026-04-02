@@ -43,8 +43,9 @@
 - [자료형](Java//연산자_자료형.md)
 - [자바형변환](Java//자바_형변환.md)
 - [자바_배열](Java//자바_배열.md)
-- JVM
-- GC
+- [오버라이딩_오버로딩](Java//오버라이딩_오버로딩.md)
+- [DTO_VO](Java//DTO_VO.md)
+- [JVM](Java//JVM.md)
 - Collection
 
 ### 📦 DataStructure(계획중)
