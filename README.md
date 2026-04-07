@@ -46,7 +46,7 @@
 - [오버라이딩_오버로딩](Java//오버라이딩_오버로딩.md)
 - [DTO_VO](Java//DTO_VO.md)
 - [JVM](Java//JVM.md)
-- Collection
+- [추상화_인터페이스](Java//추상화_인터페이스.md)
 
 ### 📦 DataStructure(계획중)
 - Stack / Queue
