@@ -47,6 +47,7 @@
 - [DTO_VO](Java//DTO_VO.md)
 - [JVM](Java//JVM.md)
 - [추상화_인터페이스](Java//추상화_인터페이스.md)
+- [Garbage_Collector](Java//Garbage_Collector.md)
 
 ### 📦 DataStructure(계획중)
 - Stack / Queue
