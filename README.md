@@ -51,16 +51,15 @@
 - [Generic](Java//제네릭.md)
 - [Collection](Java//컬렉션프레임워크.md)
 
-### DataStructure(계획중)
-- Stack / Queue
-- Tree
-- Heap
+### Spring framework
+- DI/ IOC
+- [POJO](Spring//POJO.md)
 
 ---
 
 ## Commit Rule
 - 하루 1개 개념 정리
-
+- 계속 확인하며 수정하고 추가하기
 ---
 
 ## 참고 도서 (References)
@@ -69,4 +68,5 @@ CS 지식 정리는 아래 도서를 기반으로 학습 및 정리하였습니�
 
 - 📘 『자바의 神』
 - 📘 『자바의 정석』
-- 📘 『스프링 입문을 위한 객체지향의 원리와 이해』
+- 📘 『스프링 입문을 위한 객체지향의 원리와 
+- 📘 『토비의 스프링 1권 , 2권』
