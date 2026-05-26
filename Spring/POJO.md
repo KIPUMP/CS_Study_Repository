@@ -50,3 +50,41 @@ public class User {
 ### DI(Dependency Injection) : 의존성 주입
 
 - 정의 : 객체가 필요한 의존성을 직접 생성하지 않고 외부에서 주입받는 것
+
+※ 의존성 : 아래 코드에서 Car 클래스는 Engine 클래스가 반드시 있어야 하고 Engine 클래스 변환 시, Car 클래스가 영향 받도록 되어있다.
+
+##### → 전체(Car)가 부분(Engine)에 의존
+
+```java
+class Engine {
+    public void start() {
+        System.out.println("시동");
+    }
+}
+
+class Car {
+
+    private Engine engine;
+
+    public Car() {
+        this.engine = new Engine();
+    }
+
+    public void drive() {
+        engine.start();
+    }
+}
+```
+
+##### DI를 적용한 개선 코드 : 이제는 Car가 직접 new를 사용해서 Engine 클래스를 만들지 않음
+
+```java
+class Car {
+
+    private Engine engine;
+
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+}
+```
