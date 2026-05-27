@@ -45,7 +45,9 @@ public class User {
 
 - 정의 : 객체의 생성과 제어 권한을 개발자가 아니라 Spring과 같은 프레임워크가 관리하는 것
 
-- 기존에는 개발자가 직접 객체를 생성 했지만 IoC가 등장하고서 Spring 컨테이너가 객체를 생성/관리 
+- 기존에는 개발자가 직접 객체를 생성 했지만 IoC가 등장하고서 Spring 컨테이너가 객체를 생성/관리
+
+- [Spring_IoC](Spring_IoC.md)
 
 ### DI(Dependency Injection) : 의존성 주입
 
