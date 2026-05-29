@@ -52,7 +52,7 @@
 - [Collection](Java//컬렉션프레임워크.md)
 
 ### Spring framework
-- DI/ IOC
+- [전략패턴](Spring//전략패턴.md)
 - [POJO](Spring//POJO.md)
 - [SOLID](Spring//SOLID.md)
 
