@@ -16,6 +16,8 @@
 
 ### SRP - 단일 책임의 원칙
 
+##### Single Responsibility Principle
+
 > "클래스는 하나의 캑임만 가져야 한다"
 
 - 클래스를 변경해야 하는 이유가 하나만 존재해야 한다는 의미
@@ -27,11 +29,11 @@ public class UserService {
 
   public void saveUser() {
   // 사용자 저장
-      }
+  }
 
   public void sendEmail() {
   // 이메일 전송
-      }
+  }
 }
 ```
 
@@ -50,11 +52,16 @@ public class UserService {
 ```
 
 - SRP의 장점 : 책임단위로 코드를 짜게 되면 아래의 장점이 있음
+
   - 유지보수성 강화
+
   - 테스트 용이
+
   - 변경 영향 감소
 
 ### OCP - 개방 폐쇄 원칙
+
+##### Open Closed Principle
 
 > "확장에는 열려있고 변경,수정에는 닫혀 있어야 한다"
 
@@ -115,7 +122,9 @@ public void pay() {
 }
 ```
 
-- OCP(개방-폐쇄 원칙)는 확장에는 열려 있고 수정에는 닫혀 있도록 설계하여, 결과적으로 '높은 응집도'와 '낮은 결합도'를 유지하도록 돕는 원칙이다.
+- OCP는 확장에는 열려 있고 수정에는 닫혀 있도록 설계하여, 결과적으로 '높은 응집도'와 '낮은 결합도'를 유지하도록 돕는 원칙이다.
+
+- OCP를 무시하고 프로그램을 작성하면 객체지향의 큰 장점인 유연성, 재사용성, 유지보수성을 얻을 수 없다.
 
 - [소프트웨어_결합도_응집도](결합도_응집도.md)
 
@@ -123,7 +132,17 @@ public void pay() {
 
 ### LSP - 리스코프 치환 원칙
 
+##### Liskov Substitution Principle
+
 > "부모 객체를 자식 객체로 바꿔도 정상 동작해야 한다"
+
+- 하위 클래스의 인스턴스는 상위현 객체 참조 변수에 대입해 상위 클래스의 인스턴스 역할 을 하는데 문제가 없어야 함
+
+```java
+  아버지 춘향이 = new 딸();   // LSP 위반
+
+  동물 뽀로로 = new 펭귄();   // LSP 만족
+```
 
 - 잘못된 예시 : 부모클래스(bird)의 규칙을 깸으로써 다형성이 깨짐
 
@@ -133,10 +152,12 @@ class Bird {
 }
 
 class Penguin extends Bird {    
+
   @Override
   void fly() {          // 펭귄은 날 수 없음
-  throw new UnsupportedOperationException();
+    throw new UnsupportedOperationException();
   }
+
 }
 ```
 
@@ -156,4 +177,72 @@ class Eagle implements Flyable {
 
 ### ISP - 인터페이스 분리 원칙
 
-> "부모 객체를 자식 객체로 바꿔도 정상 동작해야 한다"
+##### Interface Segregation Principle
+
+> "클라이언트는 자신이 사용하지 않는 인터페이스에 의존하면 안된다"
+
+- 잘못된 예시 : 인터페이스가 역할별로 나뉘어 있지 않음
+
+```java
+interface Machine {
+  void print();
+  void scan();
+  void fax();
+}
+```
+
+- 개선
+
+```java
+interface Printer {
+  void print();
+}
+
+interface Scanner {
+  void scan();
+}
+```
+
+### DIP - 의존 역전 원칙(추상화)
+
+##### Dependency Inversion Principle
+
+> "구체 클래스가 아닌 추상화에 의존 해야 한다"
+
+- 구현체에 직접 의존하지 말고, 인터페이스에 의존해야한다
+
+- 추상화 된 것은 구체적인 것에 의존하면 안된다.
+
+- 잘못된 예시 : 강한 결합으로 인해 테스트와 DB 변경이 어려워 짐
+
+``` java
+public class OrderService {
+
+  private MysqlRepository repository = new MysqlRepository();
+
+}
+```
+
+- 개선
+
+```java
+interface Repository {
+  void save();
+}
+
+class MysqlRepository implements Repository {
+  public void save() {}
+}
+
+public class OrderService {
+
+  private Repository repository;
+
+  public OrderService(Repository repository) {
+    this.repository=repository;
+  }
+}
+```
+
+
+
