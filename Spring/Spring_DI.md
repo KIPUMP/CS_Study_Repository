@@ -63,9 +63,11 @@ class Car {
 
     - 객체 생성 시점에 의존성이 반드시 주입됨
 
-    - final을 사용해서 불변성을 보장할 수 있음
+    - final을 사용해서 "불변성"을 보장할 수 있음
 
     - 순환 참조 발견 가능
+
+    - "테스트"가 용이해짐
 
 ```java
 @Service
@@ -158,5 +160,25 @@ public class OrderService {
 }
 
 ```
+
+- 다중 @Bean이 존재할 떄, 모호성을 해결하기 위한 어노테이션(@)
+    
+    -  @Qualifier
+
+    ```java
+
+        // "Payment 타입 중에서 cardPayment Bean을 주입해라"
+        
+        @Component("cardPayment")
+        public class CardPayment implements Payment {}
+
+        @Component("kakaoPayment")
+        public class KakaoPayment implements Payment {}
+
+        @Autowired
+        @Qualifier("cardPayment")
+        private Payment payment;
+
+    ```
 
 
