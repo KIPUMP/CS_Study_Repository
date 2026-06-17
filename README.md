@@ -57,7 +57,7 @@
 - [디자인패턴](Spring//디자인패턴.md)
 - [POJO](Spring//POJO.md)
 - [SOLID](Spring//SOLID.md)
-- [SOLID](Spring//AOP.md)
+- [AOP](Spring//AOP.md)
 ---
 
 ## Commit Rule
