@@ -44,7 +44,7 @@ public class K5 extends Car {
 -  변수는 `public static final` (상수만 가능)
 -  Java 8 이후 `default`, `static` 메서드 사용 가능
 - 인터페이스는 DI 등을 목적으로 Spring에서 더 많이 사용하고 있다
-- [PSA](/CS_Study_Repository/Spring/Service_Abstraction.md)
+- [PSA](../Spring/Service_Abstraction.md)
 
 ``` java
 public class KakaoPayService implements PaymentService {
